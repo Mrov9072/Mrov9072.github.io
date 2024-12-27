@@ -40,6 +40,15 @@
       margin-bottom: 30px;
     }
 
+    header .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover; /* Ensures the image maintains aspect ratio within the circle */
+      display: block;
+      margin: 0 auto 20px; /* centers the image and adds spacing below */
+    }
+
     header h1 {
       font-size: 2em;
       margin-bottom: 10px;
@@ -110,13 +119,14 @@
 
     <!-- Header / Name / Title -->
     <header>
-      <h1>[Your Name]</h1>
+      <img src="5438391485910343507.jpg" alt="Profile Photo" class="profile-pic" />
+      <h1>Grik Tadevosyan</h1>
       <p>[Your Current Role or Short Title, e.g. “PhD Student in Artificial Intelligence”]</p>
     </header>
 
     <!-- Contact Info -->
     <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:your.email@domain.com">your.email@domain.com</a></p>
+      <p><strong>Email:</strong> <a href="mailto:griktadevosyan@gmail.com">griktadevosyan@gmail.com</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/mrov9072" target="_blank">github.com/mrov9072</a></p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/griktadevosyan//" target="_blank">https://www.linkedin.com/in/griktadevosyan/</a></p>
       <p><strong>Website:</strong> <a href="https://mrov9072.github.io" target="_blank">mrov9072.github.io</a></p>
