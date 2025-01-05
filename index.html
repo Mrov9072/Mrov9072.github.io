@@ -96,6 +96,35 @@
         a:hover {
             color: #81c784;
         }
+
+        .uav-animation {
+            margin-top: 1em;
+            position: relative;
+            width: 150%;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .flying-uav {
+            position: absolute;
+            top: 10px;
+            left: -50px;
+            animation: fly 60s linear infinite;
+            width: 50px;
+            height: 25px;
+        }
+
+        @keyframes fly {
+            0% {
+                left: -50px;
+            }
+            50% {
+                left: 100%;
+            }
+            100% {
+                left: -50px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -104,6 +133,29 @@
         <h1>Grik Tadevosyan</h1>
         <p>MS in Data Science | Robotics & AI Specialist</p>
         <img src="5438391485910343507.jpg" alt="Grik Tadevosyan">
+        <div class="uav-animation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" class="flying-uav">
+              <!-- Central body of the quadcopter -->
+              <rect x="90" y="90" width="60" height="60" fill="#4caf50" />
+              <!-- Propellers -->
+              <circle cx="60" cy="60" r="12" fill="#4caf50" />
+              <circle cx="180" cy="60" r="12" fill="#4caf50" />
+              <circle cx="60" cy="180" r="12" fill="#4caf50" />
+              <circle cx="180" cy="180" r="12" fill="#4caf50" />
+              <!-- Rotor arms -->
+              <rect x="90" y="30" width="60" height="12" fill="#4caf50" />
+              <rect x="90" y="198" width="60" height="12" fill="#4caf50" />
+              <rect x="30" y="90" width="12" height="60" fill="#4caf50" />
+              <rect x="198" y="90" width="12" height="60" fill="#4caf50" />
+              <!-- Connecting the propellers to the body -->
+              <line x1="90" y1="90" x2="60" y2="60" stroke="#4caf50" stroke-width="4" />
+              <line x1="150" y1="90" x2="180" y2="60" stroke="#4caf50" stroke-width="4" />
+              <line x1="90" y1="150" x2="60" y2="180" stroke="#4caf50" stroke-width="4" />
+              <line x1="150" y1="150" x2="180" y2="180" stroke="#4caf50" stroke-width="4" />
+              <!-- Text "GenAI" below -->
+              <text x="120" y="120" font-family="Arial" font-size="60" fill="white" text-anchor="middle" alignment-baseline="middle">AI</text>
+          </svg>
+      </div>
     </header>
 
     <nav>
